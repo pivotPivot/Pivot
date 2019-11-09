@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Add A Business</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -13,14 +13,19 @@
         padding: 0;
         box-sizing: border-box;
         margin: auto!important;
+    }
 
+    body {
+        background: -webkit-linear-gradient(#0031a1, #002B80);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100%;
     }
 
     #formCard{
-        background-color: #002b80;
+        /*background-color: #002b80;*/
         color: white;
         border: 2px solid #b6860A!important;
-
     }
 
     input, select {
@@ -109,10 +114,10 @@
                         <label class="input-group-text" for="businessCategory">Category</label>
                     </div>
                     <select class="custom-select width" id="businessCategory">
-                        <option selected>Business</option>
-                        <option value="1">Education</option>
-                        <option value="2">Events</option>
-                        <option value="3">Promotional</option>
+                        <option value="business">Business</option>
+                        <option value="education">Education</option>
+                        <option value="events">Events</option>
+                        <option value="promotional">Promotional</option>
                     </select>
                 </div>
 
