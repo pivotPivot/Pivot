@@ -2,60 +2,102 @@
     font-family: 'Crete Round', serif;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-        ". jumbo ."
-        ". search ."
-        ". links .";
+    grid-template-areas: ". jumbo ." ". search ." ". links .";
 }
 
 .jumbotron {
     grid-area: jumbo;
 }
 
-.splash{
-    background: -webkit-linear-gradient(#0031a1, #002B80);
-    color: whitesmoke;
+.header{
+    margin-top: 4%;
 }
 
-.container{
-    display: flex;
+.splash {
+    background: -webkit-linear-gradient(#0031A1, #002B80);
+    color: whitesmoke;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 150px 200px;
+    grid-template-areas:
+            "army . navy . airforce"
+            ". marine . coastguard .";
     justify-content: center;
     margin: 10% 0 0 0;
-    height: 100vh;
-    width: 100vw;
+
     color: whitesmoke;
-    background-image:url(../img/military.png);
-    background-repeat: no-repeat;
-    background-size: 80%;
+
 }
 
-.nameLogo{
+.militaryLogo {
+    width: 190px;
+    height: 190px;
+    border: 2px solid #B6860A;
+    -moz-box-shadow: 0px 6px 5px #00005B;
+    -webkit-box-shadow: 0px 6px 5px #00005B;
+    box-shadow: 0px 6px 5px #00005B;
+    -moz-border-radius: 190px;
+    -webkit-border-radius: 190px;
+    border-radius: 190px;
+}
+
+#army {
+    grid-area:army;
+}
+
+#navy {
+    grid-area:navy;
+}
+
+#airforce {
+    grid-area:airforce;
+}
+
+#marine {
+    grid-area:marine;
+}
+
+#coastguard {
+    grid-area:coastguard;
+}
+
+.nameLogo {
     display: flex;
     justify-content: center;
 }
-.saLogo{
+
+.saLogo {
     height: 150px;
     width: 150px;
     margin: 0 20px 0 0;
 }
+
 /*---------------search form---------------------------*/
-.search-form {
-    display: flex;
-    justify-content: center;
-    grid-area: search;
-    --searchButtonWidth: 100px;
-    height: 60px;
-    max-width: 500px;
-    margin: 5% auto;
+.searchPosition {
+    grid-area: seach;
 }
 
+.search-form {
+    font-family: 'Roboto', sans-serif;
+    --searchButtonWidth: 100px;
+    height: 50px;
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+
 .search-input {
-    border: 2px solid #b6860A ;
+    border: 2px solid #B6860A;
     margin: 0;
     padding: 0.5rem calc(var(--searchButtonWidth) + 0.5rem) 0.5rem 0.5rem;
     border-radius: 8px;
     width: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     -webkit-appearance: none;
     font-size: 20px;
 }
@@ -73,11 +115,12 @@
     border: 0;
     padding: 0.5rem;
     border-radius: 8px;
+    position: absolute;
     width: var(--searchButtonWidth);
     transition: 0.2s;
-    background: #b6860A;
+    background: #B6860A;
     font-size: 20px;
-    height: 85%;
+    height: 100%;
     color: whitesmoke;
 
 }
@@ -94,13 +137,21 @@
     left: -9999px;
 }
 
-.link{
+.links {
     grid-area: links;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+
+
+}
+.links a{
     color: whitesmoke;
-    text-decoration: none!important;
-    /*margin-top: -20px;*/
+    text-decoration: none !important;
     font-family: 'Roboto', sans-serif;
 }
-.link:hover{
-    color: #b6860A;
+
+.links a:hover {
+    color: #B6860A;
 }
