@@ -1,0 +1,22 @@
+html, body {
+    background: -webkit-linear-gradient(#ededed, #e0dfe3);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100%;
+    overflow: auto;
+}
+
+.jumbotron {
+    background-image: url("../img/parking.jpg");
+    opacity: 0.8;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 50vh;
+    border-bottom: 5px solid #B6860A;
+}
+
+#map {
+    /* the width and height may be set to any size */
+    width: 100%;
+    height: 300px;
+}

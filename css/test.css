@@ -14,7 +14,7 @@
     padding: 0.5rem calc(var(--searchButtonWidth) + 0.5rem) 0.5rem 0.5rem;
     border-radius: 8px;
     width: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.1);
     -webkit-appearance: none;
     font-size: 20px;
 }

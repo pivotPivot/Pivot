@@ -12,7 +12,6 @@ var array = [
     {
         name: "USAA",
         address: "9800 Fredericksburg Rd, San Antonio, TX 78288"
-    },
 ];
 
 array.forEach(function (element) {
