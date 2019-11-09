@@ -1,11 +1,13 @@
-body {
+html, body {
     display: inline-block;
     /*background-color: #002B80;*/
     background: -webkit-linear-gradient(#0031a1, #002B80);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
     height: 100%;
+    overflow: auto;
 }
+
 
 /*--------------------link style---------------------*/
 
@@ -53,9 +55,13 @@ a:active {
 /*---------------card grid----------------------*/
 
 .card-container {
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
+        ". card card card card card card card card card card card ."
+        ". card card card card card card card card card card card ."
+        ". card card card card card card card card card card card ."
         ". card card card card card card card card card card card ."
         ". card card card card card card card card card card card ."
         ". card card card card card card card card card card card .";
@@ -78,7 +84,8 @@ a:active {
     grid-template-areas:
             "jumbo jumbo jumbo jumbo jumbo"
             ". card rating map ."
-            ". card description map .";
+            ". card description map ."
+            "table table table table table";
 }
 
 ul {
@@ -115,9 +122,9 @@ li {
 }
 
 .description {
-    margin: 10vh 0 0 0;
+    margin: 0 0 0 10px;
     grid-area: description;
-    background-color: whitesmoke;
+    color: whitesmoke;
     height: 40vh;
     width: 30vh;
 }
@@ -131,4 +138,14 @@ li {
     /* the width and height may be set to any size */
     width: 200px;
     height: 300px;
+}
+
+.reviews {
+    grid-area: table;
+    margin: 10% 0 0 0;
+}
+
+.table {
+    width: 100%;
+    background-color: whitesmoke;
 }
