@@ -1,7 +1,7 @@
-//-------------map setup--------------------
+//-------------codeupmap setup--------------------
 mapboxgl.accessToken = mapboxToken;
-var map = new mapboxgl.Map({
-    container: 'map',
+var codeupmap = new mapboxgl.Map({
+    container: 'codeupmap',
     style: 'mapbox://styles/mapbox/light-v9',
     zoom: 8,
     center: [-98.4936,29.4241],
@@ -10,8 +10,8 @@ var map = new mapboxgl.Map({
 
 var array = [
     {
-        name: "USAA",
-        address: "9800 Fredericksburg Rd, San Antonio, TX 78288"
+        name: "Codeup",
+        address: " 600 Navarro St #600, San Antonio, TX 78205"
     }
 ];
 
@@ -30,13 +30,13 @@ array.forEach(function (element) {
 
         var restPopup = new mapboxgl.Popup()
             .setText(element.name)
-            .addTo(map);
+            .addTo(codeupmap);
 
 
 
         var restMarker = new mapboxgl.Marker()
             .setLngLat(results)
-            .addTo(map)
+            .addTo(codeupmap)
             .togglePopup()
             .setPopup(restPopup);
 
