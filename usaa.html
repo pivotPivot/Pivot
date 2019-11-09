@@ -7,10 +7,17 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/codeup.css">
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="css/test.css">
     <script src="https://kit.fontawesome.com/e659140c25.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
+<form onsubmit="event.preventDefault();" class="search-form">
+    <label for="search" class="screen-reader-text">Search</label>
+    <input id="search"
+           type="search" class="search-input" placeholder="Resources, business's, schools...">
+    <button class="search-button"><i class="fas fa-search"></i></button>
+</form>
 <!----------carousel--------------->
 
 <div class="jumbotron jumbotron-fluid" id="usaa"></div>
