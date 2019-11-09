@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/codeup.css">
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
     <script src="https://kit.fontawesome.com/e659140c25.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/test.css">
 <style>
 
 
@@ -18,6 +19,12 @@
 </style>
 </head>
 <body>
+<form onsubmit="event.preventDefault();" class="search-form">
+    <label for="search" class="screen-reader-text">Search</label>
+    <input id="search"
+           type="search" class="search-input" placeholder="Resources, business's, schools...">
+    <button class="search-button"><i class="fas fa-search"></i></button>
+</form>
 <!----------carousel--------------->
 
 <div class="jumbotron jumbotron-fluid"></div>
