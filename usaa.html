@@ -5,6 +5,7 @@
     <title>USAA</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/cards.css">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
     <script src="https://kit.fontawesome.com/e659140c25.js" crossorigin="anonymous"></script>
 
 </head>
@@ -38,8 +39,38 @@
     <span class="fa fa-star checked"></span>
     </div>
 
-    <div class="description">
+    <div class="description"> <p>USAA’s mission is to facilitate the financial security of its members, associates and their families by providing a full range of highly competitive financial products and services. In so doing, we seek to be the provider of choice for the military community. We do this by upholding the highest standards and ensuring that our corporate business activities and individual employee conduct reflect good judgment and common sense, and are consistent with our core values of:
 
+        Service, Loyalty, Honesty and Integrity</p></div>
+    <div id='map' class="map"></div>
+
+
+    <div class="reviews">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Rating</th>
+                <th scope="col">Name</th>
+                <th scope="col">Branch</th>
+                <th scope="col">Review</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row"><div class="rating-container" style="padding: 0; margin: 0;">
+                    <span class="rating" style="color: black;">Star Rating</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div></th>
+                <td>Mark Otto</td>
+                <td>Navy</td>
+                <td>USAA is great!!! I would recommend them to anyone!</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 
@@ -47,5 +78,9 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script src="js/map.js"></script>
 </body>
 </html>

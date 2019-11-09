@@ -1,11 +1,13 @@
-body {
+html, body {
     display: inline-block;
     /*background-color: #002B80;*/
     background: -webkit-linear-gradient(#0031a1, #002B80);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
     height: 100%;
+    overflow: auto;
 }
+
 
 /*--------------------link style---------------------*/
 
@@ -53,9 +55,13 @@ a:active {
 /*---------------card grid----------------------*/
 
 .card-container {
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
+        ". card card card card card card card card card card card ."
+        ". card card card card card card card card card card card ."
+        ". card card card card card card card card card card card ."
         ". card card card card card card card card card card card ."
         ". card card card card card card card card card card card ."
         ". card card card card card card card card card card card .";
@@ -74,9 +80,12 @@ a:active {
 .container {
     margin: 0;
     display: grid;
-    grid-template-columns: 5% 33% 33% 5%;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
-            "card card rating . description";
+            "jumbo jumbo jumbo jumbo jumbo"
+            ". card rating map ."
+            ". card description map ."
+            "table table table table table";
 }
 
 ul {
@@ -90,11 +99,12 @@ li {
 
 .company-card {
     grid-area: card;
+    background-color: whitesmoke;
 }
 
 .rating-container {
     grid-area: rating;
-    margin: 20vh 0 0 5vw;
+    margin: 0 0 0 5vw;
 
 }
 
@@ -112,9 +122,30 @@ li {
 }
 
 .description {
-    margin: 10vh 0 0 0;
+    margin: 0 0 0 10px;
     grid-area: description;
-    background-color: whitesmoke;
+    color: whitesmoke;
     height: 40vh;
     width: 30vh;
+}
+
+.map {
+    grid-area: map;
+    margin-left: 10px;
+}
+
+#map {
+    /* the width and height may be set to any size */
+    width: 200px;
+    height: 300px;
+}
+
+.reviews {
+    grid-area: table;
+    margin: 10% 0 0 0;
+}
+
+.table {
+    width: 100%;
+    background-color: whitesmoke;
 }
