@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>USAA</title>
+    <title>Codeup</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/codeup.css">
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
     <script src="https://kit.fontawesome.com/e659140c25.js" crossorigin="anonymous"></script>
 
@@ -16,35 +16,39 @@
 
 
 <!--------------------company card------------------>
+<h2 class="company-name">Codeup</h2>
 <div class="container">
-    <div class="card company-card" style="width: 200px;">
-        <img src="img/usaa-logo.png" class="card-img-top" alt="usaa-logo">
+    <div class="row">
+    <div class="card company-card col-md-5 col-sm-12 col-12">
+        <div class="w-100" id='codeupmap'></div>
         <div class="card-body">
             <ul>
-                <a href="https://www.google.com/maps/search/usaa+san+antonio/@29.4361903,-98.7666675,10z/data=!3m1!4b1"><li><i class="fas fa-compass"></i> 9800 Fredericksburg Rd
-                    San Antonio, TX 78288</li></a>
-                <li><i class="fas fa-phone"></i> (210) 531-8722</li>
-                <li><i class="fas fa-laptop"></i> usaa.com</li>
-                <li><i class="fas fa-envelope"></i> service@usaa.com</li>
+               <li><i class="fas fa-compass"></i> 600 Navarro St #600, San Antonio, TX 78205</li>
+                <li><i class="fas fa-phone"></i>(210) 802-7289</li>
+                <li><i class="fas fa-laptop"></i> codeup.com</li>
+                <li><i class="fas fa-envelope"></i> info@codeup.com</li>
             </ul>
         </div>
     </div>
 
-    <div class="rating-container">
-    <h2 class="rating">Star Rating</h2>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
+    <div class="rating-container col-md-5 col-sm-12 col-12">
+        <h2 class="rating">San Antonio Local Rating</h2>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        </div>
+        <p>Reboot your career.
+            Codeup offers 20-week accelerator programs to launch your career as a computer programmer or a data scientist. At Codeup, we connect employers with talented, motivated, professional candidates who are readily equipped with all the skills they need to succeed in the workplace. Our goal is to embed greatness in your organization.</p>
     </div>
 
-    <div class="description"> <p>USAA’s mission is to facilitate the financial security of its members, associates and their families by providing a full range of highly competitive financial products and services. In so doing, we seek to be the provider of choice for the military community. We do this by upholding the highest standards and ensuring that our corporate business activities and individual employee conduct reflect good judgment and common sense, and are consistent with our core values of:
+    <div class="description col-md-3 col-sm-12 col-12">
+    </div>
+</div>
 
-        Service, Loyalty, Honesty and Integrity</p></div>
-    <div id='map' class="map"></div>
-
-
+    <div class="container">
     <div class="reviews">
         <table class="table table-striped">
             <thead>
@@ -58,21 +62,22 @@
             <tbody>
             <tr>
                 <th scope="row"><div class="rating-container" style="padding: 0; margin: 0;">
-                    <span class="rating" style="color: black;">Star Rating</span>
+                    <span class="rating" style="color: whitesmoke;">SA Local Rating</span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                 </div></th>
-                <td>Mark Otto</td>
-                <td>Navy</td>
-                <td>USAA is great!!! I would recommend them to anyone!</td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             </tbody>
         </table>
     </div>
-</div>
+    </div>
+    </div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -81,6 +86,6 @@
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 <script src="js/keys.js"></script>
 <script src="js/mapbox-geocoder-utils.js"></script>
-<script src="js/usaamap.js"></script>
+<script src="js/codeupmap.js"></script>
 </body>
 </html>
