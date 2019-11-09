@@ -1,3 +1,14 @@
+body {
+    display: inline-block;
+    /*background-color: #002B80;*/
+    background: -webkit-linear-gradient(#0031a1, #002B80);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+}
+
+/*--------------------link style---------------------*/
+
 a:link {
     color: black;
     text-decoration: none;
@@ -8,7 +19,6 @@ a:visited {
     color: black;
     text-decoration: none;
 }
-
 
 a:hover {
     color: black;
@@ -21,11 +31,90 @@ a:active {
     text-decoration: none;
 }
 
+/*--------------card style---------------------*/
+
 .card-body {
     padding: 10px;
+    font-size: .9rem;
 }
 
 .card {
     width: 200px;
     height: 300px;
+    margin: 5px;
+    border: 2px solid #B6860A;
+    background-color: whitesmoke;
+}
+
+.company-card {
+    height: 400px;
+}
+
+/*---------------card grid----------------------*/
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        ". card card card card card card card card card card card ."
+        ". card card card card card card card card card card card ."
+        ". card card card card card card card card card card card .";
+}
+
+/*---------------list-----------------*/
+.jumbotron {
+    background-image: url("../img/usaa7.jpg");
+    opacity: 0.8;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 50vh;
+    border-bottom: 5px solid #B6860A;
+}
+
+.container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 5% 33% 33% 5%;
+    grid-template-areas:
+            "card card rating . description";
+}
+
+ul {
+    list-style: none;
+    padding: 5px 0 0 5px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.company-card {
+    grid-area: card;
+}
+
+.rating-container {
+    grid-area: rating;
+    margin: 20vh 0 0 5vw;
+
+}
+
+.rating {
+    color: whitesmoke;
+    display: flex;
+}
+
+.checked {
+    color: #B6860A !important;
+}
+
+.fa-star {
+    color: whitesmoke;
+}
+
+.description {
+    margin: 10vh 0 0 0;
+    grid-area: description;
+    background-color: whitesmoke;
+    height: 40vh;
+    width: 30vh;
 }
