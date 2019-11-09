@@ -74,9 +74,11 @@ a:active {
 .container {
     margin: 0;
     display: grid;
-    grid-template-columns: 5% 33% 33% 5%;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
-            "card card rating . description";
+            "jumbo jumbo jumbo jumbo jumbo"
+            ". card rating map ."
+            ". card description map .";
 }
 
 ul {
@@ -90,11 +92,12 @@ li {
 
 .company-card {
     grid-area: card;
+    background-color: whitesmoke;
 }
 
 .rating-container {
     grid-area: rating;
-    margin: 20vh 0 0 5vw;
+    margin: 0 0 0 5vw;
 
 }
 
@@ -117,4 +120,15 @@ li {
     background-color: whitesmoke;
     height: 40vh;
     width: 30vh;
+}
+
+.map {
+    grid-area: map;
+    margin-left: 10px;
+}
+
+#map {
+    /* the width and height may be set to any size */
+    width: 200px;
+    height: 300px;
 }
