@@ -1,0 +1,31 @@
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+}
