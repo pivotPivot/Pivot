@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>USAA</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/cards.css">
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
     <script src="https://kit.fontawesome.com/e659140c25.js" crossorigin="anonymous"></script>
 
 </head>
@@ -21,8 +22,11 @@
         <img src="img/usaa-logo.png" class="card-img-top" alt="usaa-logo">
         <div class="card-body">
             <ul>
-                <a href="https://www.google.com/maps/search/usaa+san+antonio/@29.4361903,-98.7666675,10z/data=!3m1!4b1"><li><i class="fas fa-compass"></i> 9800 Fredericksburg Rd
-                    San Antonio, TX 78288</li></a>
+                <a href="https://www.google.com/maps/search/usaa+san+antonio/@29.4361903,-98.7666675,10z/data=!3m1!4b1">
+                    <li><i class="fas fa-compass"></i> 9800 Fredericksburg Rd
+                        San Antonio, TX 78288
+                    </li>
+                </a>
                 <li><i class="fas fa-phone"></i> (210) 531-8722</li>
                 <li><i class="fas fa-laptop"></i> usaa.com</li>
                 <li><i class="fas fa-envelope"></i> service@usaa.com</li>
@@ -31,15 +35,19 @@
     </div>
 
     <div class="rating-container">
-    <h2 class="rating">Star Rating</h2>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
+        <h2 class="rating">Star Rating</h2>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
     </div>
 
-    <div class="description"> <p>USAA’s mission is to facilitate the financial security of its members, associates and their families by providing a full range of highly competitive financial products and services. In so doing, we seek to be the provider of choice for the military community. We do this by upholding the highest standards and ensuring that our corporate business activities and individual employee conduct reflect good judgment and common sense, and are consistent with our core values of:
+    <div class="description"><p>USAA’s mission is to facilitate the financial security of its members, associates and
+        their families by providing a full range of highly competitive financial products and services. In so doing, we
+        seek to be the provider of choice for the military community. We do this by upholding the highest standards and
+        ensuring that our corporate business activities and individual employee conduct reflect good judgment and common
+        sense, and are consistent with our core values of:
 
         Service, Loyalty, Honesty and Integrity</p></div>
     <div id='map' class="map"></div>
@@ -51,23 +59,14 @@
             <tr>
                 <th scope="col">Rating</th>
                 <th scope="col">Name</th>
-                <th scope="col">Branch</th>
                 <th scope="col">Review</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <th scope="row"><div class="rating-container" style="padding: 0; margin: 0;">
-                    <span class="rating" style="color: black;">Star Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </div></th>
-                <td>Mark Otto</td>
-                <td>Navy</td>
-                <td>USAA is great!!! I would recommend them to anyone!</td>
+                <td id="starsRating">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</td>
+                <td id="reviewerName">Mark Otto</td>
+                <td id="reviewCont">USAA is great!!! I would recommend them to anyone!</td>
             </tr>
             </tbody>
         </table>
@@ -75,9 +74,46 @@
 </div>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<div id="reviewCard">
+    <!--    Review title   -->
+    <form>
+        <div class="form-group">
+            <label for="reviewTitle">Title your review</label>
+            <input type="text" class="form-control" id="reviewtitle" placeholder="...">
+        </div>
+
+        <!--        how many *****-->
+        <div class="input-group mt-4 width">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="starRating">Rating</label>
+            </div>
+            <select class="custom-select width" id="starRating">
+                <option value="1star">⭐️</option>
+                <option value="2star">️⭐️ ⭐️</option>
+                <option value="3star">⭐️ ⭐️ ⭐️</option>
+                <option value="4star">⭐️ ⭐️ ⭐️ ⭐️</option>
+                <option value="5star" selected>⭐️ ⭐️ ⭐️ ⭐️ ⭐️</option>
+            </select>
+        </div>
+        <!--        Review content-->
+        <div class="form-group">
+            <label for="reviewContent">Example label</label>
+            <input type="text" style="height: 200px;" class="form-control" id="reviewcontent"
+                   placeholder="Tell us about your experience...">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 <script src="js/keys.js"></script>
 <script src="js/mapbox-geocoder-utils.js"></script>
