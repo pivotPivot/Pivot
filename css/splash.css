@@ -40,8 +40,8 @@ body{
 }
 
 .militaryLogo {
-    width: 190px;
-    height: 190px;
+    width: 140px;
+    height: 140px;
     border: 2px solid #B6860A;
     -moz-box-shadow: 0px 6px 5px #00005B;
     -webkit-box-shadow: 0px 6px 5px #00005B;
@@ -167,7 +167,7 @@ body{
 
 .quote{
     grid-area: quote;
-    margin-left: 20%;
+    margin-left: 10%;
     margin-top: 5%;
 
 }
