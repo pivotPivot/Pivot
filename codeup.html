@@ -128,10 +128,30 @@
 <!--                    <span class="fa fa-star checked"></span>-->
 <!--                    <span class="fa fa-star checked"></span>-->
 <!--                </div></th>-->
-<!--                <td id="starRatingOut">test</td>-->
-<!--                <td id="reviewerNameOut">test</td>-->
-<!--                <td id="reviewTitleOut">test</td>-->
-<!--                <td id="reviewContentOut">test</td>-->
+<!--<tr>-->
+<!--                <td id="starRatingOut"></td>-->
+<!--                <td id="reviewerNameOut"></td>-->
+<!--                <td id="reviewTitleOut"></td>-->
+<!--                <td id="reviewContentOut"></td>-->
+<!--</tr>-->
+<tr>
+    <td id="">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</td>
+    <td id="">John Smith</td>
+    <td id="">Great Company</td>
+    <td id="">Great Value! They Care For Their Staff! they have an excellent training department and they are very knowledgeable about the material</td>
+</tr>
+<tr>
+    <td id="">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</td>
+    <td id="">Jane Doe</td>
+    <td id="">What an experience!</td>
+    <td id="">Codeup made the the process easy and Parker was able to help me apply my veteran's benefits, and transition from military to civilian life.</td>
+</tr>
+<tr>
+    <td id="">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</td>
+    <td id="">Ryan Goslong</td>
+    <td id="">test3</td>
+    <td id="">the reason i chose codeup over other options is because codeup is proud to be part of the military city community and supports veterans like myself! </td>
+</tr>
 <!--            </tr>-->
             </tbody>
         </table>
@@ -214,7 +234,7 @@
 <script>
    $("#submitReview").click(function(){
 
-$("#reviewTable").append("<tr> <td>" + $("#starRating").val() + "</td> <td>" + $("#reviewerName").val() + "</td> <td>" + $("#reviewtitle").val() + "</td> <td>" + $("#reviewContent").val() + "</td></tr>");
+$("#reviewTable").prepend("<tr> <td>" + $("#starRating").val() + "</td> <td>" + $("#reviewerName").val() + "</td> <td>" + $("#reviewtitle").val() + "</td> <td>" + $("#reviewContent").val() + "</td></tr>");
        $("#reviewerName").val("");
        $("#reviewtitle").val("");
        $("#reviewContent").val("");

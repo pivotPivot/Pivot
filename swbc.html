@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="css/test.css">
     <script src="https://kit.fontawesome.com/e659140c25.js" crossorigin="anonymous"></script>
     <script src="js/jquery-2.2.4.js"></script>
+    <style>
+        .table thead th {
+            width: 150px;
+            vertical-align: bottom;
+            border-bottom: 2px solid #dee2e6;
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: whitesmoke!important">
@@ -75,6 +81,10 @@
             </div>
             <h4>Description</h4>
             <p>Pioneering financial and insurance solutions through a winning combination of world-class service and revolutionary technology.</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+                Add a review
+            </button>
         </div>
 
         <div class="description col-md-3 col-sm-12 col-12">
@@ -88,29 +98,49 @@
                 <tr>
                     <th scope="col">Rating</th>
                     <th scope="col">Name</th>
-                    <th scope="col">Branch</th>
+                    <th scope="col">Title</th>
                     <th scope="col">Review</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id="reviewTable">
+                <!--            <tr>-->
+                <!--                <th scope="row"><div class="rating-container" style="padding: 0; margin: 0;">-->
+                <!--                    <span class="rating" style="color: whitesmoke;">SA Local Rating</span>-->
+                <!--                    <span class="fa fa-star checked"></span>-->
+                <!--                    <span class="fa fa-star checked"></span>-->
+                <!--                    <span class="fa fa-star checked"></span>-->
+                <!--                    <span class="fa fa-star checked"></span>-->
+                <!--                    <span class="fa fa-star checked"></span>-->
+                <!--                </div></th>-->
+                <!--<tr>-->
+                <!--                <td id="starRatingOut"></td>-->
+                <!--                <td id="reviewerNameOut"></td>-->
+                <!--                <td id="reviewTitleOut"></td>-->
+                <!--                <td id="reviewContentOut"></td>-->
+                <!--</tr>-->
                 <tr>
-                    <th scope="row"><div class="rating-container" style="padding: 0; margin: 0;">
-                        <span class="rating" style="color: whitesmoke;">SA Local Rating</span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td id="">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</td>
+                    <td id="">John Smith</td>
+                    <td id="">Great Company</td>
+                    <td id="">Great Value! They Care For Their Staff! they have an excellent training department and they are very knowledgeable about the material</td>
                 </tr>
+                <tr>
+                    <td id="">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</td>
+                    <td id="">Jane Doe</td>
+                    <td id="">What an experience!</td>
+                    <td id="">Codeup made the the process easy and Parker was able to help me apply my veteran's benefits, and transition from military to civilian life.</td>
+                </tr>
+                <tr>
+                    <td id="">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</td>
+                    <td id="">Ryan Goslong</td>
+                    <td id="">test3</td>
+                    <td id="">the reason i chose codeup over other options is because codeup is proud to be part of the military city community and supports veterans like myself! </td>
+                </tr>
+                <!--            </tr>-->
                 </tbody>
             </table>
         </div>
     </div>
-</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
