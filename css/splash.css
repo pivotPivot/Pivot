@@ -1,3 +1,9 @@
+body{
+    background-color: #002B80;
+    color: whitesmoke;
+    height: 100%;
+    width: 100%;
+}
 .grid {
     font-family: 'Crete Round', serif;
     display: grid;
