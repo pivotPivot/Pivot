@@ -21,8 +21,9 @@
 
 .container {
     display: grid;
-    grid-template-rows: 150px 200px;
+    grid-template-rows: 25px 150px 200px;
     grid-template-areas:
+            ". . quote . ."
             "army . navy . airforce"
             ". marine . coastguard .";
     justify-content: center;
@@ -79,6 +80,7 @@
 /*---------------search form---------------------------*/
 .searchPosition {
     grid-area: seach;
+    margin-top: 5%;
 }
 
 .search-form {
@@ -155,4 +157,11 @@
 
 .links a:hover {
     color: #B6860A;
+}
+
+.quote{
+    grid-area: quote;
+    margin-left: 20%;
+    margin-top: 5%;
+
 }
