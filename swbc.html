@@ -9,7 +9,7 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
     <link rel="stylesheet" href="css/test.css">
     <script src="https://kit.fontawesome.com/e659140c25.js" crossorigin="anonymous"></script>
-
+    <script src="js/jquery-2.2.4.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -20,20 +20,26 @@
         <a class="navbar-brand" href="#"><img style="height: 55px; width: 55px; margin-right: 2%" src="img/saLogo.png"><img src="img/MilHubsm.png"></a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="splash.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="http://localhost:63342/Pivot/employer.html?_ijt=evfvpor25m0vo6nkncr5fc02o">Veteran Friendly Employers</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="http://localhost:63342/Pivot/housing.html?_ijt=ju3cdec85a6oobama8itpga5s5">Relocation Services</a>
+        </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.zocdoc.com/primary-care-doctors/san-antonio-225141pm/tricare-377m">Medical Providers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:63342/Pivot/education.html?_ijt=e45dc3kf8v64pkl7pcf1ciupsv">GI Bill Approved Schools</a>
             </li>
         </ul>
         <form onsubmit="event.preventDefault();" class="search-form mr-5">
             <label for="search" class="screen-reader-text">Search</label>
             <input id="search"
                    type="search" class="search-input" placeholder="Search...">
-            <button class="search-button"><i class="fas fa-search"></i></button>
+            <button class="search-button" onclick="window.open('codeup.html')"><i class="fas fa-search"></i></button>
         </form>
 
     </div>
