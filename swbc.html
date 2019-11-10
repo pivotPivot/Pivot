@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SWBC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/codeup.css">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="css/test.css">
+    <script src="https://kit.fontawesome.com/e659140c25.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">MilHub</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+        <form onsubmit="event.preventDefault();" class="search-form mr-5">
+            <label for="search" class="screen-reader-text">Search</label>
+            <input id="search"
+                   type="search" class="search-input" placeholder="Search...">
+            <button class="search-button"><i class="fas fa-search"></i></button>
+        </form>
+
+    </div>
+</nav>
+<!----------carousel--------------->
+
+<div class="jumbotron jumbotron-fluid" id="swbc"></div>
+
+
+<!--------------------company card------------------>
+<h2 class="company-name">SWBC</h2>
+<div class="container">
+    <div class="row">
+        <div class="card company-card col-md-5 col-sm-12 col-12">
+            <div class="w-100" id='swbcmap'></div>
+            <div class="card-body">
+                <ul>
+                    <li><i class="fas fa-compass"></i>4500 Lockhill Selma Rd, San Antonio, TX 78249</li>
+                    <li><i class="fas fa-phone"></i>(210) 525-1241</li>
+                    <li><a href=""><i class="fas fa-laptop"></i> https://www.swbc.com/</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rating-container col-md-5 col-sm-12 col-12">
+            <h2 class="rating">San Antonio Local Rating</h2>
+            <div class="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <h4>Description</h4>
+            <p>Pioneering financial and insurance solutions through a winning combination of world-class service and revolutionary technology.</p>
+        </div>
+
+        <div class="description col-md-3 col-sm-12 col-12">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="reviews">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">Rating</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Branch</th>
+                    <th scope="col">Review</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row"><div class="rating-container" style="padding: 0; margin: 0;">
+                        <span class="rating" style="color: whitesmoke;">SA Local Rating</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script src="js/swbcmap.js"></script>
+</body>
+</html>
